@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Assignment 01</string>
+    <string name="buttonReset">Reset</string>
+    <string name="buttonCalculate">Calculate</string>
+    <string name="textFinalPrice">Final Price</string>
+    <string name="textDiscount">\nDiscount:\n</string>
+    <string name="discountPrice">0.00</string>
+    <string name="finalNumber">0.00</string>
+    <string name="textViewCustom">Custom%</string>
+    <string name="radioButton1" class="10">10%</string>
+    <string name="radioButton2">15%</string>
+    <string name="radioButton3">18%</string>
+    <string name="radioButton4">Custom</string>
+    <string name="textViewSale">Sale%</string>
+    <string name="textViewItemPrice">Item Price:</string>
+    <string name="header">Discount Calculator</string>
+    <string name="sliderValue">25%</string>
+</resources>

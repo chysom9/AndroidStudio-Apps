@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Assignment2</string>
+    <string name="Logo" />
+    <string name="Instructions">Choose 4 Cases</string>
+    <string name="reset">Reset\n</string>
+    <string name="resetButton">Reset</string>
+    <string name="UnopenedBox_1" />
+    <string name="UnopenedBox_2" />
+    <string name="UnopenedBox_3" />
+    <string name="UnopenedBox_4" />
+    <string name="UnopenedBox_5" />
+    <string name="UnopenedBox_6" />
+    <string name="UnopenedBox_7" />
+    <string name="UnopenedBox_8" />
+    <string name="UnopenedBox_9" />
+    <string name="UnopenedBox_10" />
+    <string name="CHooseCase">Choose 4 Cases</string>
+    <string name="closedReward_1" />
+    <string name="closedReward_2" />
+    <string name="closedReward_3" />
+    <string name="closedReward_4" />
+    <string name="closedReward_5" />
+    <string name="closedReward_6" />
+    <string name="closedReward_7" />
+    <string name="closedReward_8" />
+    <string name="closedReward_9" />
+    <string name="closedReward_10" />
+    <string name="Deal">Deal</string>
+    <string name="Nodeal">No Deal</string>
+</resources>

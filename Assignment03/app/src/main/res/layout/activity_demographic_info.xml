@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/demographicNext"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemographicInfo">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="183dp"
+        android:text="@string/demographic_Info"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="70dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="6dp"
+        android:text="@string/EducationTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/educationVal"
+        app:layout_constraintEnd_toStartOf="@+id/educationVal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/educationVal"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="6dp"
+        android:text="@string/Marital_Status"
+        app:layout_constraintBottom_toBottomOf="@+id/maritalVal"
+        app:layout_constraintEnd_toStartOf="@+id/maritalVal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/maritalVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="@string/LivingStatus"
+        app:layout_constraintBottom_toBottomOf="@+id/livingVal"
+        app:layout_constraintEnd_toStartOf="@+id/livingVal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toTopOf="@+id/livingVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="@string/Income"
+        app:layout_constraintBottom_toBottomOf="@+id/incVal"
+        app:layout_constraintEnd_toStartOf="@+id/incVal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/incVal"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/educationVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/Education_Val"
+        app:layout_constraintEnd_toStartOf="@+id/select1"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/maritalVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/MaritalStatus_Val"
+        app:layout_constraintEnd_toStartOf="@+id/select2"
+        app:layout_constraintTop_toBottomOf="@+id/educationVal" />
+
+    <TextView
+        android:id="@+id/livingVal"
+        android:layout_width="33dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/Education_Val"
+        app:layout_constraintEnd_toStartOf="@+id/select3"
+        app:layout_constraintTop_toBottomOf="@+id/maritalVal"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/incVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="48dp"
+        android:text="@string/Education_Val"
+        app:layout_constraintEnd_toStartOf="@+id/select4"
+        app:layout_constraintTop_toBottomOf="@+id/livingVal" />
+
+    <Button
+        android:id="@+id/select2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/SelectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/select1"
+        app:layout_constraintTop_toBottomOf="@+id/select1" />
+
+    <Button
+        android:id="@+id/select3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/SelectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/select2"
+        app:layout_constraintTop_toBottomOf="@+id/select2" />
+
+    <Button
+        android:id="@+id/select4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="49dp"
+        android:text="@string/SelectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/select3"
+        app:layout_constraintTop_toBottomOf="@+id/select3" />
+
+    <Button
+        android:id="@+id/select1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/SelectButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/demoNext"
+        android:layout_width="316dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="380dp"
+        android:layout_marginEnd="159dp"
+        android:text="@string/IdentInfoButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select4" />
+</androidx.constraintlayout.widget.ConstraintLayout>

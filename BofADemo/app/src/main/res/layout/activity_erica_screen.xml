@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".EricaActivity">
+
+    <!-- First Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#09132C"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/userInputEditText"
+            android:layout_width="219dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="28dp"
+            android:hint="Type your response here"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/sendButton" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/sendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="296dp"
+            android:clickable="true"
+            android:contentDescription="@string/send"
+            android:src="@android:drawable/ic_menu_send"
+            app:layout_constraintStart_toEndOf="@+id/userInputEditText"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="510dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/erica_cropped" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/initialSpeechButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="22dp"
+            android:clickable="true"
+            android:contentDescription="@string/etst"
+            app:layout_constraintBottom_toBottomOf="@+id/sendButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/sendButton"
+            app:layout_constraintTop_toTopOf="@+id/sendButton"
+            app:srcCompat="@android:drawable/ic_btn_speak_now" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Second Section -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/section2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#09132C"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/ericaTextView"
+            android:layout_width="249dp"
+            android:layout_height="124dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="167dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="How are you doing today?"
+            android:textColor="#F8F8F8"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/newUserInputEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/historyRecyclerView"
+            android:layout_width="405dp"
+            android:layout_height="583dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="18dp"
+            android:background="#09132C"
+            app:layout_constraintBottom_toTopOf="@+id/ericaTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/newUserInputEditText"
+            android:layout_width="204dp"
+            android:layout_height="68dp"
+            android:layout_marginStart="16dp"
+            android:hint="Type your answer here"
+            android:inputType="textMultiLine"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/newSendButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/newSendButton"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/newSendButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="22dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_menu_send"
+            app:layout_constraintEnd_toStartOf="@+id/speechButton"
+            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintStart_toEndOf="@+id/newUserInputEditText"
+            app:layout_constraintTop_toBottomOf="@+id/historyRecyclerView" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/speechButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="33dp"
+            android:clickable="true"
+            android:src="@android:drawable/ic_btn_speak_now"
+            app:layout_constraintBottom_toBottomOf="@+id/newSendButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/newSendButton" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginBottom="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/historyRecyclerView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/screenshot_2024_07_16_at_10_08_50am" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

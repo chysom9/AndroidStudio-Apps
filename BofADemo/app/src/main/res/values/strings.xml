@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">BofA Demo</string>
+    <string name="Button" />
+    <string name="Image_description">Image background mock</string>
+    <string name="Button2" />
+    <string name="askzTextQuestion">Type or ask me something</string>
+    <string name="etst">.</string>
+    <string name="micButton" />
+    <string name="record">record</string>
+    <string name="ericaInit">What can i help you with?...</string>
+    <string name="doesThisLookGood">DOES EVRYTHING LOOK GOOD CHI?</string>
+    <string name="send">send</string>
+    <string name="looksGood">Does everything look good?</string>
+    <string name="submit">Submit</string>
+    <string name="edit">Edit</string>
+    <string name="submitted">Great your appliocation has been submitted and you are going to be contacted upon Approval!</string>
+    <string name="buttonDescription">Send Button\n</string>
+    <string name="syub">Great!, your application has been submitted and you are going to be contacted upon approval.</string>
+    <string name="done">Done</string>
+</resources>
